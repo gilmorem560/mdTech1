@@ -1,0 +1,32 @@
+mdTech1 - a simple megadrive engine
+
+Building
+--------
+
+This engine currently uses GNU Binutils 2.16.1 targeting m68k-md-coff. Simply
+adjust the AS and LD environment variables in the Makefile according to your
+local toolchain setup. GCC 3.3.6 can also be built targeting m68k-md-coff and
+I am currently exploring options to integrate C code.
+
+Base Components
+---------------
+
+	header	- the 68000 and system headers
+	utility	- useful subroutines
+	ctrl 	- controller subroutines
+	hint	- horizontal interrupt subroutine
+	vint	- vertical interrupt subroutine
+	main	- main game init and routines
+
+Headers
+-------
+
+	md		- megadrive constants
+	vars	- variables and constants
+
+Graphics
+--------
+
+	config	- graphics configuration
+	sprites	- sprite-related operations
+	planes	- scrollplane-related operations
