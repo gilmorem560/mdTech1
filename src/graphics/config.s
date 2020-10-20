@@ -2,6 +2,7 @@
 /* config - graphics configuration                                           */
 /* ------------------------------------------------------------------------- */
 	.include "src/md.i"
+	.global vdpregs
 	.global	vdpinit
 	.global vramwrite
 /* ------------------------------------------------------------------------- */
